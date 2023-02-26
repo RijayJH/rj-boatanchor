@@ -10,3 +10,6 @@ A Simple Script to Anchor Boats in the Ocean.
 - Drop resource into your server directory and add `ensure rj-boatanchor` to your `server.cfg`
 - Add `TriggerEvent('radial:boatanchor')` to `ox_lib\resource\interface\client\radial.lua` line 268
 - Enjoy
+
+## Showcase
+- [Link](https://youtu.be/KW1ADcw8liI)
