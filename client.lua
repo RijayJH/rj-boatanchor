@@ -1,7 +1,7 @@
 local anchored = false
 RegisterNetEvent("BoatAnchor", function(boat)
 	Wait(0)
-	local ped = GetPlayerPed(-1)
+	local ped = PlayerPedId()
 	if not IsVehicleEngineOn(boat) then
 		if not IsPedInAnyVehicle(ped) and boat ~= nil then
 			if not anchored then
