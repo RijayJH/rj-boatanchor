@@ -4,7 +4,7 @@ RegisterNetEvent("BoatAnchor", function(boat)
 	local ped = PlayerPedId()
 	if not IsVehicleEngineOn(boat) then
 		if not IsPedInAnyVehicle(ped) and boat ~= nil then
-			if not anchored then
+			if not IsBoatAnchoredAndFrozen(vehicle) then
 				SetBoatAnchor(boat, true)
 				TaskStartScenarioInPlace(ped, 'CODE_HUMAN_MEDIC_TEND_TO_DEAD', 0, true)
 				Citizen.Wait(10000)
